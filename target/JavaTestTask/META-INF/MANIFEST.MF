@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: JavaTestTask Maven Webapp
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: Yuri
+Implementation-Vendor-Id: test
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8.0_162
+Main-Class: ${start-class}
+
