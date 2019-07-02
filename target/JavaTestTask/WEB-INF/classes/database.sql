@@ -14,10 +14,7 @@ CREATE TABLE characters
   gender character varying(255),
   image character varying(255),
   url character varying(255),
-  portfoliolinks character varying(255),
-  secondname character varying(255),
-  skills character varying(255),
-  CONSTRAINT "charactersPK" PRIMARY KEY (id)
+    CONSTRAINT "charactersPK" PRIMARY KEY (id)
 );
 
 

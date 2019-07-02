@@ -15,11 +15,8 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 
-
-
-@ApplicationPath("/")
 @Service
-public class CharacterServiceJSON {
+public class CharacterServiceJSON implements CharacterService{
 
 /*
     @GET
@@ -32,22 +29,18 @@ public class CharacterServiceJSON {
     @Autowired
     private CharacterDaoImpl characterDao;
 
-    public CharacterDaoImpl getCharacterDao() {
-        return characterDao;
-    }
 
-    public void setCharacterDao(CharacterDaoImpl characterDao) {
-        this.characterDao = characterDao;
-    }
 
-    @Transactional("businessData")
+    @Transactional(readOnly = true)
+    @Override
     @GET
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
     public Character getRandomChar() {
         return characterDao.getCharacter();
     }
 
-    @Transactional("businessData")
+    @Transactional(readOnly = true)
+    @Override
     @GET
     @Path("/{keyword}")
     @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
@@ -56,4 +49,11 @@ public class CharacterServiceJSON {
         return listOfCaracters;
     }
 
+    public void setCharacterDao(CharacterDaoImpl characterDao) {
+        this.characterDao = characterDao;
+    }
+
+    public CharacterDaoImpl getCharacterDao() {
+        return characterDao;
+    }
 }
