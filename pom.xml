@@ -27,7 +27,7 @@
     <liquibase.version>3.5.3</liquibase.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <postgresql.version>9.4.1212</postgresql.version>
+    <postgresql.version>42.2.25</postgresql.version>
   </properties>
 
   <parent>
