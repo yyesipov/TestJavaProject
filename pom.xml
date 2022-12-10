@@ -14,7 +14,7 @@
   <url>http://www.example.com</url>
 
   <properties>
-    <spring.version>4.3.5.RELEASE</spring.version>
+    <spring.version>6.0.0</spring.version>
     <spring-security.version>4.0.2.RELEASE</spring-security.version>
     <spring-data-jpa.version>1.8.2.RELEASE</spring-data-jpa.version>
     <security-taglib.version>4.0.2.RELEASE</security-taglib.version>
@@ -115,7 +115,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
-      <version>4.3.5.RELEASE</version>
+      <version>6.0.0</version>
     </dependency>
 
       <dependency>
